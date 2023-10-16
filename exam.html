@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link href="exam.css" rel="stylesheet">
+</head>
+<body>
+    <div id="heading-part"style="display:flex">
+        <div id="img-div">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"/>
+            <p>Kafene</p>
+
+        </div>
+        <div id="topbar-menu-heading">
+            <a id="order-link" class="tapbar-menu">order</a>
+            <a id="product-link" class="tapbar-menu">products</a>
+            <a id="users-link" class="tapbar-menu">Users</a>
+        </div>
+    </div>
+
+
+    <div id="login-page">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" id="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="order-page">
+        <h1>Order </h1>
+        <div id="filter-options"  style="display:flex">
+            <div > 
+                <h3>Filters</h3>
+                <p>count:11</p>
+            <label><input type="checkbox" class="filter" value="New" checked> New</label>
+            <label><input type="checkbox" class="filter" value="Packed" checked> Packed</label>
+            <label><input type="checkbox" class="filter" value="InTransit" checked> InTransit</label>
+            <label><input type="checkbox" class="filter" value="Delivered" checked> Delivered</label>
+            </div>
+            <table id="order-list" >
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <!-- Order data will be inserted here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+</div>
+
+<!-- product item -->
+
+<div id="products-page">
+    <h1>Products</h1>
+    <div id="filter-options"  style="display:flex">
+        <div > 
+            <h3>Filters</h3>
+            <p>counts:29</p>
+        <label><input type="checkbox" class="filter" value="Expired" checked> Expired</label>
+        <label><input type="checkbox" class="filter" value="Low stock" checked> Low Stock</label>
+        
+        </div>
+        <table id="product-list" >
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Product Name</th>
+                    <th>product Brand</th>
+                    <th>Expiry Date</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody >
+                <!-- Order data will be inserted here using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="exam.js"></script>
+</body>
+</html>
